@@ -8,6 +8,10 @@
                 <h2>{{ post.title }}</h2>
               </a>
               {{ post.excerpt }}
+              <br />
+              <a href="{{ post.url }}">
+                Read more...
+              </a>
           {% endfor %}
       </section>
 {% include footer.html %}
