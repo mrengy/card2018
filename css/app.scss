@@ -3,7 +3,10 @@
 
 // variables
 $sectionSeparator: 1em;
-$colorBubble: #ddd;
+$colorBubble: #dddf;
+$colorBubbleTransparent: #ddd0;
+$colorBackground: #ffff;
+$colorBackgroundTransparent: #fff0;
 
 // mixins
 @mixin border-radius($radius) {
@@ -27,6 +30,10 @@ body{
 
 // speech bubble definition
 
+.speech-container{
+  position: relative;
+}
+
 .speech{
   background-color: $colorBubble;
   padding: 1em;
@@ -34,14 +41,23 @@ body{
   align-self: flex-start;
 }
 
+.speech::after{
+  content: '';
+  background-color: $colorBubble;
+  height: 2em;
+  position: absolute;
+  display:block;
+}
+
 .attribution{
   position: sticky;
   bottom: 0;
+  background: linear-gradient($colorBackgroundTransparent 2em,$colorBackground 2em);
 }
 
 .bubble{
   height: 2em;
-  background-color: #0f0;
+  background: linear-gradient($colorBubbleTransparent,$colorBubble);
   position:relative;
 }
 
@@ -52,7 +68,7 @@ body{
   width: 0;
   height: 0;
   border: 1em solid transparent;
-  border-top-color: #f00;
+  border-top-color: $colorBubble;
   border-bottom: 0;
   margin-bottom: 1em;
   z-index: 2;
