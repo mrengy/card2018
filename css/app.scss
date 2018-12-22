@@ -26,14 +26,12 @@ body{
 /*---- Speech Bubbles from https://leaverou.github.io/bubbly/ ---*/
 
 // speech bubble definition
-.speech-container{
-  align-items: flex-start;
-}
 
 .speech{
   background-color: $colorBubble;
   padding: 1em;
   position: relative;
+  align-self: flex-start;
 }
 
 .speech:after{
@@ -62,10 +60,16 @@ body{
 
 .voice-emandm{
   @include border-radius(1em 1em 0 1em);
+  text-align: right;
 }
+
 
 .voice-emandm:after{
   margin-right: -.5em;
   border-right: 0;
   right: .5em;
+}
+
+.voice-emandm p{
+  text-align:left;
 }
