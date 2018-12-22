@@ -38,14 +38,15 @@ body{
 
 .speech:after{
   content: '';
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: 0;
   height: 0;
   border: 1em solid transparent;
-  border-top-color: $colorBubble;
+  border-top-color: #f00;
   border-bottom: 0;
-  margin-bottom: -1em;
+  margin-bottom: 1em;
+  z-index: 2;
 }
 
 // voice definition
