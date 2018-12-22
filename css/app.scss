@@ -13,6 +13,12 @@ $colorBubble: #ddd;
   background-clip: padding-box;  /* stops bg color from leaking outside the border: */
 }
 
+// global styilng
+
+body{
+  padding: 1em 0;
+}
+
 .more{
   margin-top: $sectionSeparator;
 }
