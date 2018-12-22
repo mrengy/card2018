@@ -26,6 +26,10 @@ body{
 /*---- Speech Bubbles from https://leaverou.github.io/bubbly/ ---*/
 
 // speech bubble definition
+.speech-container{
+  align-items: flex-start;
+}
+
 .speech{
   background-color: $colorBubble;
   padding: 1em;
