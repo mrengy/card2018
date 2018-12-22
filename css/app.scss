@@ -39,6 +39,11 @@ body{
   bottom: 0;
 }
 
+.bubble{
+  height: 2em;
+  background-color: #0f0;
+}
+
 .bubble:after{
   content: '';
   position: absolute;
