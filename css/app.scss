@@ -34,6 +34,13 @@ body{
   position: relative;
 }
 
+.speech-bottom{
+  position: absolute;
+  background-color: $colorBubble;
+  height: 2em;
+  width: 100%;
+}
+
 .speech{
   background-color: $colorBubble;
   padding: 1em;
@@ -41,13 +48,20 @@ body{
   align-self: flex-start;
 }
 
+.speech p:last-child{
+  margin-bottom: -1em;
+}
+
+/*
 .speech::after{
   content: '';
   background-color: $colorBubble;
   height: 2em;
+  width: 100%
   position: absolute;
-  display:block;
+  display: block;
 }
+*/
 
 .attribution{
   position: sticky;
