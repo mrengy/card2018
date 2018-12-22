@@ -42,12 +42,13 @@ body{
 .bubble{
   height: 2em;
   background-color: #0f0;
+  position:relative;
 }
 
-.bubble:after{
+.bubble::after{
   content: '';
   position: absolute;
-  top: 0;
+  bottom: -2em;
   width: 0;
   height: 0;
   border: 1em solid transparent;
@@ -58,13 +59,13 @@ body{
 }
 
 // voice definition
-.voice-kepler .bubble:after{
+.voice-kepler .bubble::after{
   margin-left: 0;
   border-left: 0;
   left: 0;
 }
 
-.voice-emandm .bubble:after{
+.voice-emandm .bubble::after{
   margin-right: 0;
   border-right: 0;
   right: 0;
