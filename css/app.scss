@@ -3,11 +3,58 @@
 
 // variables
 $sectionSeparator: 1em;
+$colorBubble: #ddd;
 
-.post{
-  background-color:#ccc;
+// mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
 }
 
 .more{
   margin-top: $sectionSeparator;
+}
+
+/*---- Speech Bubbles from https://leaverou.github.io/bubbly/ ---*/
+
+// speech bubble definition
+.speech{
+  background-color: $colorBubble;
+  padding: 1em;
+  position: relative;
+}
+
+.speech:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border: 1em solid transparent;
+  border-top-color: $colorBubble;
+  border-bottom: 0;
+  margin-bottom: -1em;
+}
+
+// voice definition
+.voice-kepler{
+  @include border-radius(1em 1em 1em 0);
+}
+
+.voice-kepler:after{
+  margin-left: -.5em;
+  border-left: 0;
+  left: .5em;
+}
+
+.voice-emandm{
+  @include border-radius(1em 1em 0 1em);
+}
+
+.voice-emandm:after{
+  margin-right: -.5em;
+  border-right: 0;
+  right: .5em;
 }
