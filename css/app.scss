@@ -34,14 +34,14 @@ body{
   align-self: flex-start;
 }
 
-.speaker{
+.attribution{
   position: sticky;
   bottom: 0;
 }
 
-.speaker:before{
+.bubble:after{
   content: '';
-  position: sticky;
+  position: absolute;
   top: 0;
   width: 0;
   height: 0;
@@ -53,18 +53,19 @@ body{
 }
 
 // voice definition
-.voice-kepler{
-  @include border-radius(1em 1em 1em 0);
-}
-
-.speaker-kepler:before{
-  margin-left: -1em;
+.voice-kepler .bubble:after{
+  margin-left: 0;
   border-left: 0;
-  left: .5em;
+  left: 0;
 }
 
-.voice-emandm{
-  @include border-radius(1em 1em 0 1em);
+.voice-emandm .bubble:after{
+  margin-right: 0;
+  border-right: 0;
+  right: 0;
+}
+
+.voice-emandm .bubble, .voice-emandm .speaker{
   text-align: right;
 }
 
