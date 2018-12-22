@@ -110,10 +110,10 @@ body{
   text-align:left;
 }
 
-.voice-kepler .bubble{
+.voice-kepler .bubble, .voice-kepler .speech-bottom{
   @include border-radius(0 0 1em 0);
 }
 
-.voice-emandm .bubble{
+.voice-emandm .bubble, .voice-emandm .speech-bottom{
   @include border-radius(0 0 0 1em);
 }
