@@ -3,7 +3,7 @@
 
 // variables
 $sectionSeparator: 1em;
-$textFadeHeight: 3em;
+$textFadeHeight: 2em;
 // $textFadeHeight: 2em;
 $colorBubble: #dddf;
 $colorBubbleTransparent: #ddd0;
@@ -59,7 +59,7 @@ body{
 .attribution{
   position: sticky;
   bottom: 0;
-  background: linear-gradient($colorBackgroundTransparent $textFadeHeight,$colorBackground $textFadeHeight);
+  //background: linear-gradient($colorBackgroundTransparent $textFadeHeight,$colorBackground $textFadeHeight);
   z-index: 2;
 }
 
@@ -70,10 +70,34 @@ body{
   z-index: inherit;
 }
 
+/*
+.bubble::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  background-color: #f00;
+  height: $textFadeHeight;
+  width: 100%;
+}
+
+.attribution::after{
+  content: '';
+  position: absolute;
+  top: $textFadeHeight;
+  background-color: #0f0
+  height: 100%;
+  width: 100%;
+}
+*/
+
+.speaker{
+  background-color: $colorBackground;
+}
+
 .bubble::after{
   content: '';
   position: absolute;
-  bottom: -$textFadeHeight + 1em;
+  bottom: -$textFadeHeight;
   width: 0;
   height: 0;
   border: 1em solid transparent;
