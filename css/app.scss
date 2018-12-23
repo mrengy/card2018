@@ -67,6 +67,7 @@ body{
   height: $textFadeHeight;
   background: linear-gradient($colorBubbleTransparent,$colorBubble);
   position:relative;
+  z-index: inherit;
 }
 
 .bubble::after{
@@ -79,6 +80,7 @@ body{
   border-top-color: $colorBubble;
   border-bottom: 0;
   margin-bottom: 1em;
+  z-index: inherit;
 }
 
 // voice definition
@@ -104,8 +106,10 @@ body{
 
 .voice-kepler .bubble, .voice-kepler .speech-bottom{
   @include border-radius(0 0 1em 0);
+  z-index: inherit;
 }
 
 .voice-emandm .bubble, .voice-emandm .speech-bottom{
   @include border-radius(0 0 0 1em);
+  z-index: inherit;
 }
