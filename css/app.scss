@@ -32,8 +32,14 @@ body{
   margin-top: $sectionSeparator;
 }
 
-/*---- Speech Bubbles from https://leaverou.github.io/bubbly/ ---*/
+// index
 
+#kepler-greeting{
+  float: left;
+  display: inline;
+}
+
+/*---- Speech Bubbles from https://leaverou.github.io/bubbly/ ---*/
 // speech bubble definition
 
 .speech-container{
