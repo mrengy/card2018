@@ -3,7 +3,6 @@
 # cd to working local directory (root of the repository)
 # rsync to update changes in _site folder to server
 # rsync -azP _site/ mrengy@mike-eng.com:/home/mrengy/mike-eng.com/sandbox/card2018
-#
 
 # Welcome to Jekyll!
 #
