@@ -9,6 +9,9 @@ $colorBubble: #dddf;
 $colorBubbleTransparent: #ddd0;
 $colorBackground: #ffff;
 $colorBackgroundTransparent: #fff0;
+$colorBlubBackground: #2ba6cb;
+$colorBlubText: #fff;
+$colorSpeechText: #0a0a0a;
 
 
 // mixins
@@ -117,4 +120,23 @@ body{
 .voice-emandm .bubble, .voice-emandm .speech-bottom, .voice-lightning .bubble, .voice-lightning .speech-bottom{
   @include border-radius(0 0 0 1em);
   z-index: inherit;
+}
+
+/*--- blub ---*/
+
+body.page{
+  background-color: $colorBlubBackground;
+  color: $colorBlubText;
+}
+
+.page a{
+  color: $colorBlubText;
+}
+
+.page .speech{
+  color: $colorSpeechText;
+}
+
+.page .speaker{
+  background-color: $colorBlubBackground;
 }
