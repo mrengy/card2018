@@ -3,10 +3,13 @@
 
 // variables
 $sectionSeparator: 1em;
+$textFadeHeight: 3em;
+// $textFadeHeight: 2em;
 $colorBubble: #dddf;
 $colorBubbleTransparent: #ddd0;
 $colorBackground: #ffff;
 $colorBackgroundTransparent: #fff0;
+
 
 // mixins
 @mixin border-radius($radius) {
@@ -37,7 +40,7 @@ body{
 .speech-bottom{
   position: absolute;
   background-color: $colorBubble;
-  height: 2em;
+  height: $textFadeHeight;
   width: 100%;
 }
 
@@ -53,26 +56,15 @@ body{
   margin-bottom: -1em;
 }
 
-/*
-.speech::after{
-  content: '';
-  background-color: $colorBubble;
-  height: 2em;
-  width: 100%
-  position: absolute;
-  display: block;
-}
-*/
-
 .attribution{
   position: sticky;
   bottom: 0;
-  background: linear-gradient($colorBackgroundTransparent 2em,$colorBackground 2em);
+  background: linear-gradient($colorBackgroundTransparent $textFadeHeight,$colorBackground $textFadeHeight);
   z-index: 2;
 }
 
 .bubble{
-  height: 2em;
+  height: $textFadeHeight;
   background: linear-gradient($colorBubbleTransparent,$colorBubble);
   position:relative;
 }
@@ -80,7 +72,7 @@ body{
 .bubble::after{
   content: '';
   position: absolute;
-  bottom: -2em;
+  bottom: -$textFadeHeight + 1em;
   width: 0;
   height: 0;
   border: 1em solid transparent;
