@@ -95,17 +95,17 @@ body{
   left: 0;
 }
 
-.voice-emandm .bubble::after{
+.voice-emandm .bubble::after, .voice-lightning .bubble::after{
   margin-right: 0;
   border-right: 0;
   right: 0;
 }
 
-.voice-emandm .bubble, .voice-emandm .speaker{
+.voice-emandm .bubble, .voice-emandm .speaker, .voice-lightning .bubble, .voice-lightning .speaker{
   text-align: right;
 }
 
-.voice-emandm p{
+.voice-emandm p, .voice-lightning p{
   text-align:left;
 }
 
@@ -114,7 +114,7 @@ body{
   z-index: inherit;
 }
 
-.voice-emandm .bubble, .voice-emandm .speech-bottom{
+.voice-emandm .bubble, .voice-emandm .speech-bottom, .voice-lightning .bubble, .voice-lightning .speech-bottom{
   @include border-radius(0 0 0 1em);
   z-index: inherit;
 }
