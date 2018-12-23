@@ -1,3 +1,10 @@
+# Deployment instructions (note to self)
+# check url setting - set to remote server url when ready to build to remote site
+# cd to working local directory (root of the repository)
+# rsync to update changes in _site folder to server
+# rsync -azP _site/ mrengy@mike-eng.com:/home/mrengy/mike-eng.com/sandbox/card2018
+#
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
