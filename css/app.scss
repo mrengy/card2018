@@ -36,7 +36,13 @@ body{
 
 #kepler-greeting{
   float: left;
-  display: inline;
+  display: inline-block;
+  min-width: 3.3em;
+}
+
+section {
+  float: none;
+  clear: both;
 }
 
 /*---- Speech Bubbles from https://leaverou.github.io/bubbly/ ---*/
