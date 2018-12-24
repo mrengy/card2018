@@ -12,8 +12,8 @@ $colorBackgroundTransparent: #fff0;
 $colorBlubBackground: #2ba6cb;
 $colorBlubText: #fff;
 $colorSpeechText: #0a0a0a;
-$colorCaption: #fff;
-$colorCaptionBackground: #000;
+$colorCaptionBackground: $colorBubble;
+$colorCaption: $colorSpeechText;
 
 
 // mixins
@@ -45,8 +45,8 @@ body{
 }
 
 .caption-container{
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 1em;
   left: 0;
   background-color: $colorCaptionBackground;
   color: $colorCaption;
