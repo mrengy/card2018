@@ -12,6 +12,8 @@ $colorBackgroundTransparent: #fff0;
 $colorBlubBackground: #2ba6cb;
 $colorBlubText: #fff;
 $colorSpeechText: #0a0a0a;
+$colorCaption: #fff;
+$colorCaptionBackground: #000;
 
 
 // mixins
@@ -34,6 +36,27 @@ body{
 
 .excerpt a img{
   margin-bottom: 1em;
+}
+
+// image captions https://shermandigital.com/blog/create-an-overlay-image-caption-for-foundation/
+.excerpt-image-container{
+  position: relative;
+  display: block;
+}
+
+.caption-container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: $colorCaptionBackground;
+  color: $colorCaption;
+  opacity: 0.75;
+  width: 100%;
+}
+
+.caption-content{
+  padding: .5em;
+  margin: 0;
 }
 
 // index
