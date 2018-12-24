@@ -38,6 +38,11 @@ body{
   margin-bottom: 1em;
 }
 
+.reveal{
+  width: auto;
+  //min-width: 37.5em;
+}
+
 // image captions https://shermandigital.com/blog/create-an-overlay-image-caption-for-foundation/
 .excerpt-image-container{
   position: relative;
