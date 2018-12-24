@@ -43,6 +43,12 @@ body{
   //min-width: 37.5em;
 }
 
+button.close-button{
+  background-color: $colorBackground;
+  border-radius: 0;
+  padding: .1em;
+}
+
 // image captions https://shermandigital.com/blog/create-an-overlay-image-caption-for-foundation/
 .excerpt-image-container{
   position: relative;
