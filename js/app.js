@@ -10,6 +10,8 @@ $(document).foundation().ready( function(){
     e.preventDefault();
     //add class to the snail container
     $('#snail-container').addClass('moved');
+    //track in google analytics
+    ga('send', 'event', 'Easter Egg', 'click', 'Lightning', 1);
   });
 
   $('#snail').parent().on( 'transitionend', function() {
