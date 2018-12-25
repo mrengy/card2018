@@ -202,18 +202,10 @@ body.page{
   bottom: -10px;
   right: -90px;
   z-index: 3;
+  transition: right 10s;
 }
 
 #snail-container.moved{
-  animation-duration: 10s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    right: -90px;
-  }
-  to {
-    right: 100vw;
-  }
+  right: 100vw;
+  width: 90px;
 }
